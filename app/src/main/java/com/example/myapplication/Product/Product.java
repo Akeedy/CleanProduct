@@ -11,18 +11,24 @@ public class Product {
     String name;
     int score;
     String imagePath;
+    String brand;
+    String description;
     List<Env_Certificate> Env_Certicates;
+
 
     public Product() {
     }
 
-    public Product(String id, String name, int score, String imagePath, List<Env_Certificate> env_Certicates) {
+    public Product(String id, String name, int score, String imagePath, String brand, String description, List<Env_Certificate> env_Certicates) {
         this.id = id;
         this.name = name;
         this.score = score;
         this.imagePath = imagePath;
+        this.brand = brand;
+        this.description = description;
         Env_Certicates = env_Certicates;
     }
+
 
     public String getId() {
         return id;
@@ -62,5 +68,34 @@ public class Product {
 
     public void setEnv_Certicates(List<Env_Certificate> env_Certicates) {
         Env_Certicates = env_Certicates;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", score=" + score +
+                ", imagePath='" + imagePath + '\'' +
+                ", brand='" + brand + '\'' +
+                ", description='" + description + '\'' +
+                ", Env_Certicates=" + Env_Certicates +
+                '}';
     }
 }

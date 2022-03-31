@@ -48,7 +48,6 @@ public class Env_CertificateActivity extends AppCompatActivity {
             @Override
             public ViewHolder_Certificate onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
                View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.single_certificate,parent,false);
-
                 return new ViewHolder_Certificate(v);
             }
         };

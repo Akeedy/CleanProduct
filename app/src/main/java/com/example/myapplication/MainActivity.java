@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.myapplication.Env_Certicate.Env_Certificate;
 import com.example.myapplication.Env_Certicate.Env_CertificateActivity;
 import com.example.myapplication.Product.Product;
 import com.example.myapplication.Product.Product_FirebaseAdapter;
@@ -24,6 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.security.cert.Certificate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
     // Write a message to the database
@@ -78,16 +80,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//
+////
 //        Product p=new Product();
-//        p.setName("Ariel");
+//        p.setName("Lorem");
 //        p.setScore(8);
 //        p.setEnv_Certicates(new ArrayList<>());
 //        p.setImagePath("https://firebasestorage.googleapis.com/v0/b/environment-546d0.appspot.com/o/769104721_tn24_0.jpg?alt=media&token=fcbd9419-9971-41ce-a282-f318cdb495f6");
 //        DatabaseReference productRef= database.getReference("Products");
 //        productRef.child(p.getId()).setValue(p);
-
         //
+//        Env_Certificate c=new Env_Certificate();
+//        c.setDescription("A gluten-free diet excludes any foods that contain gluten, which is a protein found in wheat and several other grainse");
+//        c.setId(UUID.randomUUID().toString());
+//        c.setName("Gluten Free");
+//        c.setImagePath("https://firebasestorage.googleapis.com/v0/b/environment-546d0.appspot.com/o/gluten-free-vector-logo.png?alt=media&token=9c9f267f-9bb5-49a1-8f3a-f7caf216cc35");
+//        c.setRank(1);
+//        DatabaseReference productRef= database.getReference("Products").child("d21f4fd5-8317-47a9-a62f-d50220293bfa").child("Certificates");
+//        productRef.child(c.getId()).setValue(c);
+
 //        FirebaseRecyclerOptions<Product> options =
 //                new FirebaseRecyclerOptions.Builder<Product>()
 //                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Products"), Product.class)

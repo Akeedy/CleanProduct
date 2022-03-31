@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mazlu/StudioProjects/MyApplication2/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1475" />
         <entry key="..\:/Users/mazlu/StudioProjects/MyApplication2/app/src/main/res/layout/activity_env_certificate.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/mazlu/StudioProjects/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/mazlu/StudioProjects/MyApplication2/app/src/main/res/layout/activity_product.xml" value="0.2" />
@@ -12,6 +13,8 @@
         <entry key="..\:/Users/mazlu/StudioProjects/MyApplication2/app/src/main/res/layout/single_product.xml" value="0.25" />
         <entry key="..\:/Users/mazlu/StudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.165" />
         <entry key="..\:/Users/mazlu/StudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.165" />
+        <entry key="..\:/Users/mazlu/StudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1475" />
+        <entry key="..\:/Users/mazlu/StudioProjects/MyApplication2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1475" />
       </map>
     </option>
   </component>

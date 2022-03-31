@@ -33,7 +33,8 @@ public class Product_FirebaseAdapter extends FirebaseRecyclerAdapter<Product,Pro
         holder.product_id.setText(model.getId());
         holder.product_name.setText(model.getName());
         holder.product_score.setText(String.valueOf(model.getScore()));
-
+        holder.product_description.setText(model.getDescription());
+        holder.product_imagePath.setText(model.getImagePath());
 
     }
 
@@ -45,7 +46,7 @@ public class Product_FirebaseAdapter extends FirebaseRecyclerAdapter<Product,Pro
     }
 
     public class myViewHolder extends RecyclerView.ViewHolder {
-        TextView product_id,product_name,product_score;
+        TextView product_id,product_name,product_score,product_description,product_brand,product_imagePath;
         ImageView product_image;
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -53,12 +54,16 @@ public class Product_FirebaseAdapter extends FirebaseRecyclerAdapter<Product,Pro
             product_name=itemView.findViewById(R.id.product_name);
             product_image=itemView.findViewById(R.id.product_image);
             product_score=itemView.findViewById(R.id.product_score);
+            product_description=itemView.findViewById(R.id.product_description);
+            product_imagePath=itemView.findViewById(R.id.product_image_path);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent=new Intent(view.getContext(), ProductActivity.class);
                     intent.putExtra("product_id",product_id.getText().toString());
+                    intent.putExtra("product_image_path",product_imagePath.getText().toString());
+                    intent.putExtra("product_name",product_name.getText().toString());
                     view.getContext().startActivity(intent);
                 }
             });

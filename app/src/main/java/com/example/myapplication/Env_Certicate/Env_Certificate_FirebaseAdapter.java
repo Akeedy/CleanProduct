@@ -31,6 +31,7 @@ public class Env_Certificate_FirebaseAdapter extends FirebaseRecyclerAdapter<Env
     protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull Env_Certificate model) {
         Picasso.get().load(model.getImagePath()).into(holder.certificate_image);
         holder.certificate_id.setText(model.getId());
+        holder.certificate_name.setText(model.getName());
         holder.certificate_description.setText(model.getDescription());
 
     }
@@ -44,11 +45,12 @@ public class Env_Certificate_FirebaseAdapter extends FirebaseRecyclerAdapter<Env
 
     public class myViewHolder extends RecyclerView.ViewHolder {
 
-        TextView certificate_id,certificate_description;
+        TextView certificate_id,certificate_name,certificate_description;
         ImageView certificate_image;
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
             certificate_id=itemView.findViewById(R.id.certificate_id);
+            certificate_name=itemView.findViewById(R.id.certificate_name);
             certificate_description=itemView.findViewById(R.id.certificate_description);
             certificate_image=itemView.findViewById(R.id.certificate_image);
 
