@@ -89,14 +89,22 @@ public class MainActivity extends AppCompatActivity {
 //        DatabaseReference productRef= database.getReference("Products");
 //        productRef.child(p.getId()).setValue(p);
         //
-//        Env_Certificate c=new Env_Certificate();
-//        c.setDescription("A gluten-free diet excludes any foods that contain gluten, which is a protein found in wheat and several other grainse");
-//        c.setId(UUID.randomUUID().toString());
-//        c.setName("Gluten Free");
-//        c.setImagePath("https://firebasestorage.googleapis.com/v0/b/environment-546d0.appspot.com/o/gluten-free-vector-logo.png?alt=media&token=9c9f267f-9bb5-49a1-8f3a-f7caf216cc35");
-//        c.setRank(1);
-//        DatabaseReference productRef= database.getReference("Products").child("d21f4fd5-8317-47a9-a62f-d50220293bfa").child("Certificates");
-//        productRef.child(c.getId()).setValue(c);
+        Env_Certificate c=new Env_Certificate();
+        c.setDescription("Görmek için premium üyelik satın alın");
+        c.setId(UUID.randomUUID().toString());
+        c.setName("Premium");
+        c.setImagePath("https://firebasestorage.googleapis.com/v0/b/environment-546d0.appspot.com/o/certificate_icons%2Fcancel.png?alt=media&token=7f6704c1-c2c8-47de-bcbc-3333c8051a7b");
+        c.setRank(1);
+
+        Env_Certificate c1=new Env_Certificate();
+        c1.setDescription("Ecolabel, tüm dünyada uygulanan gönüllü bir çevresel performans sertifikası ve etiketleme yöntemidir. Ecolabel etiketi, üretim ve tüketim aşamalarında çevreye olan negatif etkileri en aşağıya çekilmiş ürünleri tanımlar niteliktedir.");
+        c1.setId(UUID.randomUUID().toString());
+        c1.setName("Ecolabel");
+        c1.setImagePath("https://firebasestorage.googleapis.com/v0/b/environment-546d0.appspot.com/o/certificate_icons%2Fecolabel.jpg?alt=media&token=50f0b59f-8385-4007-8c2d-972e9d777971");
+        c1.setRank(1);
+        DatabaseReference productRef= database.getReference("Products").child("b0154e5f-f74f-42c1-b861-2af0964c3a62").child("Certificates");
+        productRef.child(c.getId()).setValue(c);
+        productRef.child(c1.getId()).setValue(c1);
 
 //        FirebaseRecyclerOptions<Product> options =
 //                new FirebaseRecyclerOptions.Builder<Product>()
